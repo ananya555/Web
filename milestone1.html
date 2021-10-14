@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<!-- This is how HTML comments look like -->
+    <html>
+<!-- the title will appear on the page-->
+    <head>
+        <title>
+            Uses of HTML
+        </title>
+        <style>
+            .forms{
+                background-color: maroon;
+                color: moccasin;
+            }
+            .tables{
+                background-color: darksalmon;
+                color: firebrick;
+            }
+            #links{
+                background-color: powderblue;
+                color: royalblue;
+                text-align: center;
+            }
+            #image{
+                background-color:tomato;
+                color: wheat;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+<!-- as it is a survey form, we will need to submit the details, hence we use form -->
+        <form>
+            <p>
+                <!--BLOCK Display-->
+                <div align="center">
+                    <!--Adds a heading to the form-->
+                <h1 class="forms"><u>1. We can make forms using HTML </u></u1.></h1>
+                <h1>Students Interests Survey form</h1>
+                    Enter your name:
+                    <!-- Input type text for small texts, specify size -->
+                <input type="text" name="UserName" size=35 maxlength=35 value="">
+                <!--Adds spaces -->
+                </br></br>
+                    Enter your course name with branch:
+                <input type="text" name="course" size=35 maxlength=35 value=""> 
+                </br> </br>
+                Tell us a little about yourself:
+                <!-- For writing lot of text like descriptions with text wrapping,
+                    if you don't want text wrapping, you can add wrap = "off" (horizontal scrollbar) -->
+                <textarea name="Comments" cols=30 rows=4></textarea> 
+                </br> </br>
+                Do you exercise at home?
+                <!-- Radio buttons help you choose one out of the many values -->
+                <input type="radio" name="exe" value=1>Yes
+                <input type="radio" name="exe" value=2>No
+            </p>
+            How do you like to read about your favorite topics?
+            <p>
+            <!--Checkbox lets you select multiple options -->
+                <input type="checkbox" name="Books">Books
+                <input type="checkbox" name="Web">Online resources
+                <input type="checkbox" name="Phone">Phone apps
+                <input type="checkbox" name="Magazines">Magazines
+            </p>
+            What genre of movies do you like?
+            <!--Select box lets you choose one of the multiple dropdown options-->
+            <select name="moviepref" >
+                <option value=1 >comedy</option>
+                <option value=2 >romance</option>
+                <option value=3 >thriller</option>
+                <option value=4 >horror</option>
+                <option value=5 >biopic</option>
+            </select>
+            </br></br>
+            <!--submits the information entered in the form by the user -->
+                <input type=submit value="Submit form">
+            </div>
+        </form>
+        <br><br>
+        <div align="center">
+            <h1 class="tables"><u>2. We can make tables using HTML</u></h1>
+            <table border="2"; width="70%">
+                <caption style="font-size:xx-large"><b>Data of the Survey</b></caption>
+                <tr><th>Name</th><th>Course with branch</th><th>Student's Introduction</th><th>Exercise at home or not</th><th>How do you like to read about your favorite topics?</th><th>Genre of movie</th></tr>
+                <tr><td>Ananya Goel</td><td>B. Tech(Electrical and Electronics)</td><td>I've a keen interest in coding and I love to share my knowledge.</td><td>No</td><td>Online resources</td><td>comedy</td></tr>
+                <tr><td>Akansha</td><td>B. Tech(Computer Science)</td><td>I'm a person who love to explore everything around myself and I'm very good learner.</td><td>Yes</td><td>Books</td><td>thriller</td></tr>
+            </table>
+        </div>
+        <p>
+            <h1 id="links"><u>3. We can add links using HTML</u></h1>
+                    <!--Here I use INLINE Display-->
+            <center><strong><a href="https://i.ytimg.com/vi/IK35oTxuQz8/maxresdefault.jpg"> click on me</a></strong></center>
+            <br><br>
+
+            <h1 id="image"><u>4. We can add image also on our webpage using HTML</u></h1>
+            <center><img src="https://www.tutorialstonight.com/assets/html/html-tags-list.webp" alt="Imagee is not visible" height="300" width="400"> </center>
+            </p>
+        </p>
+        <div align="center">
+            <h1 style="background-color: blueviolet; color: gainsboro"><u>5. HTML offers three ways for specifying lists of information.</u></h1>
+            All lists must contain one or more list elements. 
+            The types of lists that can be used in HTML are : 
+            ul : An unordered list. This will list items using plain bullets
+            ol : An ordered list. This will use different schemes of numbers to list your items.
+            dl : A definition list. This arranges your items in the same way as they are arranged in a dictionary.
+            <ul type= "square"; style="background-color: chocolate">
+                <li>Monday</li>    <!-- "li" is used to add elements in the list-->
+                <li>Tuesday</li>
+                <li>Wednesday</li>
+                <li>Thursday</li>
+                <li>Friday</li>
+            </ul>
+            <ul type="bullets">
+                <li>Monday</li>    <!-- "li" is used to add elements in the list-->
+                <li>Tuesday</li>
+                <li>Wednesday</li>
+                <li>Thursday</li>
+                <li>Friday</li>
+            </ul>
+            <ul style="list-style: none">
+                <li>Monday</li>
+                <li>Tuesday</li>
+                <li>Wednesday</li>
+                <li>Thursday</li>
+                <li>Friday</li>
+            </ul>
+            <ol type='a' start="1">  
+                <li>Monday</li>
+                <li>Tuesday</li>
+                <li>Wednesday</li>
+                <li>Thursday</li>
+                <li>Friday</li>
+            </ol>
+            <ol style="list-style: none">  
+                <li>Monday</li>
+                <li>Tuesday</li>
+                <li>Wednesday</li>
+                <li>Thursday</li>
+                <li>Friday</li>
+            </ol>
+            <ol type="I">  
+                <li>Monday</li>
+                <li>Tuesday</li>
+                <li>Wednesday</li>
+                <li>Thursday</li>
+                <li>Friday</li>
+            </ol>
+        </div>
+    </body>
+</html>
